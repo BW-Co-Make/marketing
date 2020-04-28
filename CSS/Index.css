@@ -86,16 +86,34 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  width: 100%;
+}
+nav ul li {
+  display: inline;
+  font-size: 2rem;
+}
 body {
   background-color: #F5F3DA;
   color: #760111;
 }
 body .gallery {
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: 2%;
+  display: flex;
+}
+body .gallery .gallery-item {
+  width: 33%;
 }
 body .gallery .gallery-item img {
-  width: 30%;
-  height: auto;
+  width: 75%;
+  height: 40vh;
 }
