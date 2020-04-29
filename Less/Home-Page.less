@@ -2,19 +2,34 @@ body{
     background-color: @mcolor;
     color: @scolor;
     line-height: 2;
-    margin:2%;
+    
+    header{
+        background-color: lighten(@mcolor, 4);
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .gallery{
         width:100%;
         height:auto;
         margin:2%;
         display:flex;
+       
         .gallery-item{
         width:33%;
+       
            img{
             width:75%;
             height:40vh;
+            border:5px solid wheat;
            }
         }
+    }
+    .bot-section{
+        margin:2%;
+        padding:.5%;
     }
 }
 @media @tablet{
