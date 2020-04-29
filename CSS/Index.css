@@ -114,12 +114,19 @@ nav ul li {
   margin: 2%;
   border: 1px solid tan;
 }
+nav ul li a {
+  text-decoration: none;
+  color: #760111;
+}
 nav ul li:hover {
   background-color: tan;
+  text-decoration: underline;
 }
 body {
   background-color: #F5F3DA;
   color: #760111;
+  line-height: 2;
+  margin: 2%;
 }
 body .gallery {
   width: 100%;
