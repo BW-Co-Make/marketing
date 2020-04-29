@@ -17,3 +17,23 @@ body{
         }
     }
 }
+@media @tablet{
+    body{
+        .flexing(flex,center,center);
+        flex-direction: column;
+        .gallery{
+            .flexing(flex,center,center);
+            flex-direction: column;
+            .gallery-item{
+                width:100%;
+                img{
+                    width:95%;
+                    height:auto;
+                }
+            }
+        }
+    }
+}
+@media @phone{
+
+}

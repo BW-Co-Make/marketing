@@ -158,3 +158,24 @@ body .gallery .gallery-item img {
   width: 75%;
   height: 40vh;
 }
+@media (max-width:800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  body .gallery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  body .gallery .gallery-item {
+    width: 100%;
+  }
+  body .gallery .gallery-item img {
+    width: 95%;
+    height: auto;
+  }
+}
