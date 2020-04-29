@@ -1,6 +1,8 @@
 body{
     background-color: @mcolor;
     color: @scolor;
+    line-height: 2;
+    margin:2%;
     .gallery{
         width:100%;
         height:auto;
@@ -14,4 +16,24 @@ body{
            }
         }
     }
+}
+@media @tablet{
+    body{
+        .flexing(flex,center,center);
+        flex-direction: column;
+        .gallery{
+            .flexing(flex,center,center);
+            flex-direction: column;
+            .gallery-item{
+                width:100%;
+                img{
+                    width:95%;
+                    height:auto;
+                }
+            }
+        }
+    }
+}
+@media @phone{
+
 }
