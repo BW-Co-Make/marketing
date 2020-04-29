@@ -1,0 +1,39 @@
+body{
+    background-color: @mcolor;
+    color: @scolor;
+    line-height: 2;
+    margin:2%;
+    .gallery{
+        width:100%;
+        height:auto;
+        margin:2%;
+        display:flex;
+        .gallery-item{
+        width:33%;
+           img{
+            width:75%;
+            height:40vh;
+           }
+        }
+    }
+}
+@media @tablet{
+    body{
+        .flexing(flex,center,center);
+        flex-direction: column;
+        .gallery{
+            .flexing(flex,center,center);
+            flex-direction: column;
+            .gallery-item{
+                width:100%;
+                img{
+                    width:95%;
+                    height:auto;
+                }
+            }
+        }
+    }
+}
+@media @phone{
+
+}
