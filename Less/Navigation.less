@@ -3,7 +3,8 @@ nav{
     
     ul{
         width:100%;
-        .flexing(flex, center, center);
+        .flexing(flex, space-evenly, center);
+        list-style-type: circle;
         a{
             text-decoration: none;
             color:@scolor;
@@ -11,12 +12,14 @@ nav{
             box-shadow:2px 4px moccasin;
             border-radius: 15px;
             margin:2%;
-            padding:2%;
+            padding:2% 6% 2% 6%;
+            width:25%;
             li{
-                display:inline;
+                
                 font-size:2rem;
                 padding:2%;
                 margin:2%;
+                text-align: center;
             }
         }
       
