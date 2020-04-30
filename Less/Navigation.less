@@ -3,22 +3,33 @@ nav{
     
     ul{
         width:100%;
-        .flexing(flex, center, center);
-        
-        li{
-            display:inline;
-            font-size:2rem;
-            padding:2%;
+        .flexing(flex, space-evenly, center);
+        list-style-type: circle;
+        a{
+            text-decoration: none;
+            color:@scolor;
+            border:2px solid tan;
+            box-shadow:2px 4px moccasin;
+            border-radius: 15px;
             margin:2%;
-            border:1px solid tan;
-            a{
-                text-decoration: none;
-                color:@scolor;
+            padding:2% 6% 2% 6%;
+            width:25%;
+            li{
+                
+                font-size:2rem;
+                padding:2%;
+                margin:2%;
+                text-align: center;
             }
         }
-        li:hover{
+      
+        a:hover{
             background-color: tan;
             text-decoration: underline;
+        }
+        a:active{
+            box-shadow:5px 10px moccasin;
+            transform:translate(0px, 10px);
         }
     }
 }
