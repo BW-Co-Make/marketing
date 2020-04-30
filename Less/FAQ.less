@@ -1,0 +1,49 @@
+.questionSection{
+    margin-left: 2%;
+    margin-right: 2%;
+
+
+    p:hover{
+        font-size: 2rem;
+    }
+    p:active{
+        font-size: 3rem;
+    }
+    @media @tablet{
+        .questionSection{
+    
+            p:hover{
+                font-size:1rem;
+            }
+            p:active{
+                font-size: 1rem;
+            }
+        }
+    }
+    @media @phone{
+        .questionSection{
+        
+                p:hover{
+                    font-size:1.2rem;
+                }
+                p:active{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    //sets a media query to scale down the zoom in effect for tablet, and phone users.
+
+}
+.contactSection{
+    text-align: center;
+    p:hover{
+        font-size:2.5rem;
+    }
+    @media @phone{
+        p:hover{
+            font-size:1.5rem;
+        }
+    }
+    //scales down the hover effect for phone users
+}
+//sets style for questionsection, and adds p hovers to enlargen font for accessibility.

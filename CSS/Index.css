@@ -105,6 +105,10 @@ h1 {
   font-size: 3rem;
   font-family: 'Oswald', sans-serif;
 }
+h1 a {
+  text-decoration: none;
+  color: #760111;
+}
 h2 {
   text-align: center;
   text-decoration: underline;
@@ -116,9 +120,21 @@ h3 {
   font-family: 'Oswald', sans-serif;
   width: 33%;
 }
+h4 {
+  font-size: 1.8rem;
+  font-family: 'Oswald', sans-serif;
+}
 p {
   font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
+}
+.jumboTron {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+.jumboTron img {
+  width: 80%;
 }
 nav {
   width: 100%;
@@ -154,6 +170,20 @@ nav ul a:active {
   box-shadow: 5px 10px moccasin;
   transform: translate(0px, 10px);
 }
+@media (max-width:1000px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav ul a {
+    width: 80%;
+  }
+}
 body {
   background-color: #F5F3DA;
   color: #760111;
@@ -168,13 +198,14 @@ body header {
   padding-right: 0px;
 }
 body .gallery {
-  width: 100%;
-  height: auto;
   margin: 2%;
   display: flex;
 }
 body .gallery .gallery-item {
   width: 33%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 body .gallery .gallery-item img {
   width: 75%;
@@ -215,6 +246,7 @@ body footer {
   justify-content: center;
   align-content: center;
   max-width: 100%;
+  flex-wrap: wrap;
 }
 .team .portrait {
   width: 33%;
@@ -222,8 +254,8 @@ body footer {
   justify-content: center;
 }
 .team .portrait h3 {
-  width: 30%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: center;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -231,4 +263,62 @@ body footer {
   width: 90%;
   border-radius: 10px;
   border: 6px dashed #760111;
+}
+@media (max-width:1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about .team {
+    flex-direction: column;
+    margin: 2%;
+  }
+  .about .team .portrait {
+    width: 60%;
+    align-self: center;
+  }
+  .about .team .portrait h3 {
+    width: 70%;
+  }
+  .about .team .portrait img {
+    width: 70%;
+  }
+}
+.questionSection {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.questionSection p:hover {
+  font-size: 2rem;
+}
+.questionSection p:active {
+  font-size: 3rem;
+}
+@media (max-width:1000px) {
+  .questionSection .questionSection p:hover {
+    font-size: 1rem;
+  }
+  .questionSection .questionSection p:active {
+    font-size: 1rem;
+  }
+}
+@media (max-width:550px) {
+  .questionSection .questionSection p:hover {
+    font-size: 1.2rem;
+  }
+  .questionSection .questionSection p:active {
+    font-size: 1.2rem;
+  }
+}
+.contactSection {
+  text-align: center;
+}
+.contactSection p:hover {
+  font-size: 2.5rem;
+}
+@media (max-width:550px) {
+  .contactSection p:hover {
+    font-size: 1.5rem;
+  }
 }
