@@ -116,12 +116,17 @@ h3 {
   font-family: 'Oswald', sans-serif;
   width: 33%;
 }
+h4 {
+  font-size: 1.8rem;
+  font-family: 'Oswald', sans-serif;
+}
 p {
   font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 nav {
   width: 100%;
+  margin: 2%;
 }
 nav ul {
   width: 100%;
@@ -231,4 +236,20 @@ body footer {
   width: 90%;
   border-radius: 10px;
   border: 6px dashed #760111;
+}
+.questionSection {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.questionSection p:hover {
+  font-size: 2rem;
+}
+.questionSection p:active {
+  font-size: 3rem;
+}
+.contactSection {
+  text-align: center;
+}
+.contactSection p:hover {
+  font-size: 2.5rem;
 }
