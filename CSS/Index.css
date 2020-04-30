@@ -269,6 +269,7 @@ body footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: -webkit-center;
   }
   .about .team {
     flex-direction: column;
